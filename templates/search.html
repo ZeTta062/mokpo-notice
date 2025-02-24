@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 결과</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>검색 결과</h1>
+
+        <h2>
+            <a href="https://www.mokpo.go.kr/www/mokpo_news/notification/public_notice">목포 고시/공고</a>
+        </h2>
+        {{ mokpo_public_notice|safe }}
+
+        <h2>
+            <a href="https://www.mokpo.go.kr/www/mokpo_news/notice">목포 일반 공지사항</a>
+        </h2>
+        {{ mokpo_notice|safe }}
+
+        <h2>
+            <a href="https://www.jeonnam.go.kr/J0203/boardList.do?infoReturn=&pageIndex=1&menuId=jeonnam0203000000&searchType=&searchText=&displayHeader=">전남 도청 공지사항</a>            
+        </h2>
+        {{ jeonnam_notice|safe }}
+
+        <br>
+        <a href="/">홈으로 돌아가기</a>
+    </main>
+</body>
+</html>
